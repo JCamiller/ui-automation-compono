@@ -1,11 +1,6 @@
-const { Before, Given, When, Then } = require('cucumber')
-const request = require('sync-request')
+const { Given, When, Then } = require('cucumber')
 
-const DATA_ADD_BOOK = require('../data/addBook.js').ADD_BOOK();
-const DATA_GET_BOOK_BY_AUTHOR = require('../data/addBook.js').GET_BOOK_BY_AUTHOR();
-
-let currentBook
-let bookDetails
+const LOCATOR = require('../locators/login-page');
 
 Given('I have valid book details', () => {
     const faker = require('faker')

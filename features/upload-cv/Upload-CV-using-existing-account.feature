@@ -1,4 +1,4 @@
-Feature: Library Add Book API
+Feature: Uploading of CV using an existing account
 
 Add a book
 
