@@ -4,11 +4,29 @@
   "description": "API Automation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-all": "npx cypress open",
+    "test-all-headless": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonX19/ui-automation-compono.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonX19/ui-automation-compono/issues"
+  },
+  "homepage": "https://github.com/jasonX19/ui-automation-compono#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^8.0.0-rc.1"
+    "cypress": "^9.1.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "cypress-xpath": "^1.6.2",
+    "faker": "^5.5.3"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
